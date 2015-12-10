@@ -1,0 +1,178 @@
+%
+% latex-sample.tex
+%
+% This LaTeX source file provides a template for a typical research paper.
+%
+
+%
+% Use the standard article template.
+%
+\documentclass{article}
+
+% The geometry package allows for easy page formatting.
+\usepackage{geometry}
+\geometry{letterpaper}
+
+% Load up special logo commands.
+\usepackage{doc}
+
+% make a reference to Hypertext 
+\usepackage{hyperref}
+
+% Package for formatting URLs.
+\usepackage{url}
+
+% Packages and definitions for graphics files.
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 'dirname #1'/'basename #1 .tif'.png}
+
+%
+% Set the title, author, and date.
+%
+\title{Group project title here  \\ \small{DNSC 6211: Programming for Analytics}}
+\author{
+	Team member 1 \\
+	Team member 2 \\
+	Team member 3 \\
+	Team member 4 \\
+}
+\date{}
+
+%
+% The document proper.
+%
+\begin{document}
+
+% Add the title section.
+\maketitle
+
+% Add an abstract.
+\abstract{
+Describe your project within 200 words.  One way is answer the following questions regarding your project: (a) what did you do? (b) why did you choose do that? (c) how did you go about doing your project (d) what did you find out?, and finally (e) What did you find out? The content of your abstract and the outline and contents of your report may vary according to the needs of your specific research topic.
+}
+
+% Add various lists on new pages.
+\pagebreak
+\tableofcontents
+
+
+% Start the paper on a new page.
+\pagebreak
+
+%
+% Body text.
+%
+\section{Introduction}
+\label{introduction}
+
+You will almost certainly start with an introductory description of the topic that you investigated in your assignment.  Discuss any goals, motivation, or examples of the subject; the key is to provide the reader with any information that is necessary to understand why your topic was worth investigating.  This descriptive section should also allow the reader to understand the subsequent detail sections on the subject. Limit this to 250 words.
+
+\section{Background}
+
+Explain your "storyline" and the relevance of the different components. Talk about the nature of the data; why you chose the data you did; how did looking at the data help you decide which dataset(s) to use; and, why? What were the questions that you started with? How did those questions change as you explored the data? Did you give up on some datasets because they were not interesting? Which ones were those? How did you finally end up getting to the question(s) that you finally answered? This entire process is will help me understand how you went about framing the issue(s). Limit this to 250 words.
+
+\section{Method}
+
+The overall question that you answered
+Any sub-questions
+Any questions that you had but could not respond to satisfactorily (this will not result in a negative grade - but will give me an idea of how you went about your project. Limit this to 250 words.
+
+\section{Organization}
+
+Describe how you divided up the work in your group. Limit this to 100 words.
+
+
+\subsection{Workflow}
+
+Provide a diagram of the workflow for your project. The command to include a diagram is shown below. Make sure you \underline{remove the comment} and \underline{change the name of the graphic file} without extension. Also, instead of \textbf{Quick Build} choose \textbf{PDFLaTex} from the dropdown option. Then generate the pdf with \textbf{View PDF}.
+
+
+
+\begin{figure}[hb]
+  \centering
+%    \includegraphics[scale=0.5]{SampleWorkFlow}
+  \caption{The project workflow}
+
+\end{figure}
+
+
+Please explain your workflow diagram in this space. Limit this to 250 words.
+
+
+\subsection{Project structure}
+
+Describe your data sources. In addition, describe how they are related to each other and to the research question(s). Limit this to 250 words.
+
+\subsection{Figures and Tables}
+
+List your tables and figures and explain why you chose to use them. Explain how these tables and / or figures contribute to your "story." Limit this to 250 words.
+
+
+\section{Discussion}
+
+This section requires you to discuss your experience. Describe the value of your project. What are two main "selling points" of your project. Limit this to 150 words.
+
+\subsection{Learnings}
+
+Discuss some of your "better moments" in this projects - the ones you enjoyed. Also describe. what you learned in this project. Limit to 150 words
+
+\subsection{Challenges}
+
+Discuss some of your "difficult moments" in completing this project. You may want to write about things you wanted to do but could not complete and why. Limit to 150 words.
+
+
+
+
+\section{Bullets and numbered lists (FYI, delete in your report)}
+
+This is up to you. If you want to add another section. This section explains how to make lists. In you final report you should delete this part. 
+
+\subsection{Bulleted and Numbered Lists}
+
+\LaTeX\ is very good at providing clean lists.  Examples are shown below.
+
+\begin{itemize}
+\item Bulleted items come out properly indented and spaced, every time.
+
+\begin{itemize}
+\item Sub-bullets are a virtual no-brainer: just nest another \verb!itemize! block.
+\item Note how the bullet character automatically changes too.
+\end{itemize}
+
+\item Just keep on adding \verb!\item!s\ldots
+
+\item \ldots until you're done.
+\end{itemize}
+
+Numbered lists are almost identical, except that you specify \verb!enumerate! instead of \verb!itemize!.  List items are specified in exactly the same way (thus making it easy to change list types).
+
+\begin{enumerate}
+\item A list item
+\item Another list item
+\item A list item with multiple nested lists
+
+\begin{itemize}
+\item Nested lists can be of mixed types.
+\item That's a lot of power and flexibility for the price of learning a handful of directives.
+
+\begin{enumerate}
+\item Like nested bullet lists, nested numbered lists also ``intelligently'' change their numbering schemes.
+\item Meanwhile, all \emph{you} have to write is \verb!\item!.  \LaTeX\ does the rest.
+\end{enumerate}
+\end{itemize}
+
+\item Back to your regularly scheduled list item
+
+\end{enumerate}
+
+BTW, this is a great site to generate tables in Latex and learn how to do it in Latex -- \url{http://www.tablesgenerator.com/}
+
+
+\section{Conclusion}
+
+Wrap up your paper with an executive summary of the paper itself, reiterating its subject and its major points. Limit this to 150 words.
+
+
+\end{document}
+
